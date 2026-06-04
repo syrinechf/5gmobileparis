@@ -1,17 +1,12 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-
 session_start();
-
 $error = "";
-
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-
   $username = $_POST['username'] ?? '';
   $password = $_POST['password'] ?? '';
-
-  if ($username === "admin" && $password === "1234") {
+  if ($username === "TON_IDENTIFIANT_ADMIN" && $password === "TON_MOT_DE_PASSE_ADMIN") {
     $_SESSION['admin'] = true;
     header("Location: admin.php");
     exit();
@@ -20,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   }
 }
 ?>
-
+  
 <!DOCTYPE html>
 <html lang="fr">
 <head>
