@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "u530169248_usr_3dET03ua", "Syrinejasim94@.", "u530169248_db_3dET03ua");
+$conn = new mysqli("localhost", "TON_USER", "TON_MOT_DE_PASSE", "TON_NOM_BDD");
 if ($conn->connect_error) { die("Connexion échouée"); }
 
 $success = false;
